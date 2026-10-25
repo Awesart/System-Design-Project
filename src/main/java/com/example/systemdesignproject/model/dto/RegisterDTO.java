@@ -1,0 +1,36 @@
+package com.example.systemdesignproject.model.dto;
+
+import com.example.systemdesignproject.model.entity.Role;
+
+import java.util.List;
+
+public class RegisterDTO {
+    private String email;
+    private String username;
+    private String password;
+    private List<Role> roles;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
