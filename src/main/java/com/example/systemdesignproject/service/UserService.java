@@ -4,7 +4,6 @@ import com.example.systemdesignproject.model.dto.RegisterDTO;
 import com.example.systemdesignproject.model.entity.User;
 import com.example.systemdesignproject.model.entity.UserMapper;
 import com.example.systemdesignproject.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 public class UserService {

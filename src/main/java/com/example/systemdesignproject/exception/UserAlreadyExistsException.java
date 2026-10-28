@@ -3,7 +3,7 @@ package com.example.systemdesignproject.exception;
 public class UserAlreadyExistsException extends RuntimeException {
 
     public final int errorCode = 1;
-    private int status;
+    private final int status;
 
     UserAlreadyExistsException(
             String message,

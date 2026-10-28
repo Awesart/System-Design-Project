@@ -1,7 +1,5 @@
 package com.example.systemdesignproject.exception;
 
-import org.springframework.http.HttpStatusCode;
-
 import java.time.Instant;
 
 public class ErrorObject {
