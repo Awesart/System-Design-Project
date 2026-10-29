@@ -1,6 +1,7 @@
 package com.example.systemdesignproject.controller;
 
 import com.example.systemdesignproject.model.dto.RegisterDTO;
+import com.example.systemdesignproject.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 public class AuthController {
 
+    private UserService userService;
+
+    AuthController(
+            UserService userService
+    ){
+        this.userService = userService;
+    }
+
     //Need Login Function
     //Need Register Function
 
@@ -20,7 +29,7 @@ public class AuthController {
             @RequestBody RegisterDTO registerDTO
             ){
 
-
+        userService.saveUser(registerDTO);
 
         return new ResponseEntity<>("Success!",HttpStatus.OK);
     }

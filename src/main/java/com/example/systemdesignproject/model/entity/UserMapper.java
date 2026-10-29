@@ -4,14 +4,14 @@ import com.example.systemdesignproject.model.dto.RegisterDTO;
 
 public class UserMapper {
 
-    public User toUser(RegisterDTO registerDTO){
-        User user = new User();
+    public UserEntity toUser(RegisterDTO registerDTO){
+        UserEntity userEntity = new UserEntity();
 
-        user.setName(registerDTO.getUsername());
-        user.setEmail(registerDTO.getEmail());
-        user.setPassword(registerDTO.getPassword());
+        userEntity.setName(registerDTO.getUsername());
+        userEntity.setEmail(registerDTO.getEmail());
+        userEntity.setPassword(registerDTO.getPassword());
 
-        return user;
+        return userEntity;
     }
 
 }
