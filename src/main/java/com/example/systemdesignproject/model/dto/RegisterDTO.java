@@ -8,7 +8,6 @@ public class RegisterDTO {
     private String email;
     private String username;
     private String password;
-    private List<Role> roles;
 
     public String getEmail() {
         return email;
